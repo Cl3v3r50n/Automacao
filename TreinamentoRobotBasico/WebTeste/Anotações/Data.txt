@@ -1,0 +1,9 @@
+KW - ação ou conjunto de ações que  representa uma ação ou conjunto de ações
+library - conjunto de kw de ações
+
+no Robot podemos criar kw que chamam outras kw nelas
+
+é possível criar kw próprias usando o python (função por exemplo)
+
+o robot tem uma sintaxe tabular, ou seja pelo menos 2 espaços para separar a kw do argumento
+

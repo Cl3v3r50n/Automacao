@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20230129 16:54:56.415" rpa="false" schemaversion="3">
+<suite id="s1" name="TreinamentoRobot" source="C:\Projetos\Robotframework\Udemy\TreinamentoRobot">
+<suite id="s1-s1" name="Resource" source="C:\Projetos\Robotframework\Udemy\TreinamentoRobot\Resource">
+<suite id="s1-s1-s1" name="resourceAPI" source="C:\Projetos\Robotframework\Udemy\TreinamentoRobot\Resource\resourceAPI.robot">
+<test id="s1-s1-s1-t1" name="Criar um novo usuário" line="13">
+<kw name="Generate Random String" library="String">
+<var>${meu_email}</var>
+<arg>legth=4</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230129 16:54:56.629" level="FAIL">ValueError: Cannot convert 'length' argument 'legth=4' to an integer.</msg>
+<status status="FAIL" starttime="20230129 16:54:56.629" endtime="20230129 16:54:56.629"/>
+</kw>
+<kw name="Convert To Lower Case" library="String">
+<var>${meu_email}</var>
+<arg>${meu_email}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="NOT RUN" starttime="20230129 16:54:56.629" endtime="20230129 16:54:56.630"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>meu email:</arg>
+<arg>${meu_email}@gft.com</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230129 16:54:56.630" endtime="20230129 16:54:56.630"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${meu_email}</arg>
+<arg>${meu_email}@gft.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="NOT RUN" starttime="20230129 16:54:56.630" endtime="20230129 16:54:56.630"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${meu_email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230129 16:54:56.631" endtime="20230129 16:54:56.631"/>
+</kw>
+<status status="FAIL" starttime="20230129 16:54:56.629" endtime="20230129 16:54:56.631">ValueError: Cannot convert 'length' argument 'legth=4' to an integer.</status>
+</test>
+<status status="FAIL" starttime="20230129 16:54:56.452" endtime="20230129 16:54:56.633"/>
+</suite>
+<status status="FAIL" starttime="20230129 16:54:56.448" endtime="20230129 16:54:56.634"/>
+</suite>
+<status status="FAIL" starttime="20230129 16:54:56.418" endtime="20230129 16:54:56.635"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TreinamentoRobot">TreinamentoRobot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Resource">TreinamentoRobot.Resource</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="resourceAPI">TreinamentoRobot.Resource.resourceAPI</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230129 16:54:56.452" level="ERROR">Error in file 'C:\Projetos\Robotframework\Udemy\TreinamentoRobot\Resource\resourceAPI.robot' on line 9: Setting variable 'Resource' failed: Invalid variable name 'Resource'.</msg>
+<msg timestamp="20230129 16:54:56.453" level="ERROR">Error in file 'C:\Projetos\Robotframework\Udemy\TreinamentoRobot\Resource\resourceAPI.robot' on line 10: Setting variable 'Suite Setup' failed: Invalid variable name 'Suite Setup'.</msg>
+</errors>
+</robot>

@@ -1,0 +1,12 @@
+1675199218056	geckodriver	INFO	Listening on 127.0.0.1:51062
+1675199218586	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51063" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\cnas\\AppData\\Local\\Temp\\rust_mozprofileN7zs5G"
+1675199219328	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1675199219337	Marionette	INFO	Listening on port 51069
+Read port: 51069
+WebDriver BiDi listening on ws://127.0.0.1:51063
+1675199219590	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\cnas\\AppData\\Local\\Temp\\rust_mozprofileN7zs5G\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51063/devtools/browser/5e30467b-38f7-4688-8056-aa692729d2a5
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20230210 19:46:19.422" rpa="false" schemaversion="3">
+<suite id="s1" name="APITest2" source="C:\Projetos\Robotframework\Udemy\TreinamentoRobot\APITeste\Teste\APITest2.robot">
+<test id="s1-t1" name="Cenário 01: Verificar o status da API" line="8">
+<kw name="Dado que eu faça uma chamada GET à API" library="APITest2_resource">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>api_session</arg>
+<arg>${API_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230210 19:46:19.640" level="INFO">Creating Session using : alias=api_session, url=http://www.example.com/api/v1/users, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230210 19:46:19.640" endtime="20230210 19:46:19.641"/>
+</kw>
+<kw name="GET" library="RequestsLibrary">
+<var>${response}=</var>
+<var>${REQUEST}</var>
+<arg>api_session</arg>
+<arg>headers=${HEADERS}</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230210 19:46:19.641" level="FAIL">Assign mark '=' can be used only with the last variable.</msg>
+<status status="FAIL" starttime="20230210 19:46:19.641" endtime="20230210 19:46:19.641"/>
+</kw>
+<status status="FAIL" starttime="20230210 19:46:19.640" endtime="20230210 19:46:19.641"/>
+</kw>
+<kw name="E que eu verifique se o status de resposta é igual a 200." library="APITest2_resource">
+<status status="NOT RUN" starttime="20230210 19:46:19.642" endtime="20230210 19:46:19.642"/>
+</kw>
+<status status="FAIL" starttime="20230210 19:46:19.639" endtime="20230210 19:46:19.643">Assign mark '=' can be used only with the last variable.</status>
+</test>
+<doc>Suite para testar cadastro de usuário
+comand line de execução: robot -d ./Results .Testeapi_testing_usuarios.robot</doc>
+<status status="FAIL" starttime="20230210 19:46:19.424" endtime="20230210 19:46:19.644"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="APITest2">APITest2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

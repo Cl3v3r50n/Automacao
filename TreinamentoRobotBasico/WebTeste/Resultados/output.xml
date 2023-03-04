@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20230131 18:06:57.326" rpa="false" schemaversion="3">
+<suite id="s1" name="acessoSiteGFT" source="C:\Projetos\Robotframework\Udemy\TreinamentoRobot\WebTeste\Testes\acessoSiteGFT.robot">
+<test id="s1-t1" name="Cenário: Navegar no site da GFT Brasil" line="14">
+<kw name="Abrir Navegador" library="resource_gft" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL_BASE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230131 18:06:57.706" level="INFO">Opening browser 'FireFox' to base url 'https://www.gft.com/br/pt'.</msg>
+<msg timestamp="20230131 18:06:57.720" level="INFO">Firefox driver log is always forced to to: C:\Projetos\Robotframework\Udemy\TreinamentoRobot\WebTeste\Resultados\geckodriver-12.log</msg>
+<status status="PASS" starttime="20230131 18:06:57.705" endtime="20230131 18:07:58.112"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230131 18:07:58.112" endtime="20230131 18:07:58.121"/>
+</kw>
+<status status="PASS" starttime="20230131 18:06:57.704" endtime="20230131 18:07:58.121"/>
+</kw>
+<kw name="Dado que eu esteja Acessando o site da GFT Brasil" library="resource_gft">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL_BASE}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230131 18:07:58.123" level="INFO">Opening url 'https://www.gft.com/br/pt'</msg>
+<status status="PASS" starttime="20230131 18:07:58.122" endtime="20230131 18:07:58.984"/>
+</kw>
+<status status="PASS" starttime="20230131 18:07:58.122" endtime="20230131 18:07:58.984"/>
+</kw>
+<kw name="Quando eu clicar no botão &quot;02&quot;" library="resource_gft">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="CybotCookiebotDialogPoweredbyImage"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230131 18:07:58.986" endtime="20230131 18:07:59.527"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230131 18:07:59.530" level="INFO">Clicking button 'id=CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection'.</msg>
+<status status="PASS" starttime="20230131 18:07:59.528" endtime="20230131 18:08:00.037"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="main"]/div/div[1]/div/div/div[3]/div[3]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230131 18:08:00.038" level="INFO">Clicking button 'xpath=//*[@id="main"]/div/div[1]/div/div/div[3]/div[3]/div/button[2]'.</msg>
+<status status="PASS" starttime="20230131 18:08:00.037" endtime="20230131 18:08:00.464"/>
+</kw>
+<status status="PASS" starttime="20230131 18:07:58.984" endtime="20230131 18:08:00.464"/>
+</kw>
+<kw name="E eu clicar no botão &quot;Mostrar mais&quot;" library="resource_gft">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="main"]/div/div[1]/div/div/div[1]/div/div[2]/div/div[5]/div[2]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230131 18:08:00.468" endtime="20230131 18:08:00.517"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="main"]/div/div[1]/div/div/div[1]/div/div[2]/div/div[5]/div[2]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230131 18:08:00.518" level="INFO">Clicking link 'xpath=//*[@id="main"]/div/div[1]/div/div/div[1]/div/div[2]/div/div[5]/div[2]/a'.</msg>
+<status status="PASS" starttime="20230131 18:08:00.517" endtime="20230131 18:08:07.836"/>
+</kw>
+<status status="PASS" starttime="20230131 18:08:00.465" endtime="20230131 18:08:07.836"/>
+</kw>
+<kw name="Então eu vejo a página &quot;Como a GFT cria valor&quot;" library="resource_gft">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//*[@id="main"]/section[1]/div/div[1]/div/h1</arg>
+<arg>Como a GFT cria valor</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230131 18:08:07.838" level="INFO">Verifying element 'xpath=//*[@id="main"]/section[1]/div/div[1]/div/h1' contains exact text 'Como a GFT cria valor'.</msg>
+<status status="PASS" starttime="20230131 18:08:07.837" endtime="20230131 18:08:07.866"/>
+</kw>
+<status status="PASS" starttime="20230131 18:08:07.837" endtime="20230131 18:08:07.866"/>
+</kw>
+<doc>teste para verificar o acesso ao site da GFT Brasil</doc>
+<tag>Acesso ao site e navegação</tag>
+<status status="PASS" starttime="20230131 18:06:57.704" endtime="20230131 18:08:07.866"/>
+</test>
+<doc>teste para verificar o acesso ao site da GFT Brasil
+comandos para executar o robot: robot -d ./Resultados TestesacessoSiteGFT.robot (executa a suite)
+robot -t "nome do teste" nome do arquivo.robot (executa o teste)
+robot -i Acessos nome do arquivo.robot (execução por tags)
+robot -e Acesso nome do arquivo.robot (executa todos os testes da suite, exceo os de acesso)
+robot -v BROWSER:Chrome -d Resultados nome do arquivo.robot (troca o navegador apenas na execução em questão)</doc>
+<status status="PASS" starttime="20230131 18:06:57.328" endtime="20230131 18:08:07.868"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Acesso ao site e navegação</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="acessoSiteGFT">acessoSiteGFT</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.5 on win32)" generated="20230208 13:38:03.151" rpa="false" schemaversion="3">
+<suite id="s1" name="APITest2" source="c:\Projetos\Robotframework\Udemy\TreinamentoRobot\APITeste\Teste\APITest2.robot">
+<test id="s1-t1" name="Cenário 01: Verificar o status da API" line="8">
+<kw name="Dado que eu faça uma chamada GET à API" library="APITest2_resource">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>api_session</arg>
+<arg>${API_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230208 13:38:03.381" level="INFO">Creating Session using : alias=api_session, url=http://www.example.com/api/v1/users, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20230208 13:38:03.380" endtime="20230208 13:38:03.385"/>
+</kw>
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<var>${REQUEST}</var>
+<arg>api_session</arg>
+<arg>headers=${HEADERS}</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230208 13:38:03.391" level="FAIL">MissingSchema: Invalid URL 'api_session': No scheme supplied. Perhaps you meant http://api_session?</msg>
+<status status="FAIL" starttime="20230208 13:38:03.385" endtime="20230208 13:38:03.463"/>
+</kw>
+<status status="FAIL" starttime="20230208 13:38:03.379" endtime="20230208 13:38:03.464"/>
+</kw>
+<kw name="E que eu verifique se o status de resposta é igual a 200." library="APITest2_resource">
+<status status="NOT RUN" starttime="20230208 13:38:03.467" endtime="20230208 13:38:03.467"/>
+</kw>
+<status status="FAIL" starttime="20230208 13:38:03.378" endtime="20230208 13:38:03.469">MissingSchema: Invalid URL 'api_session': No scheme supplied. Perhaps you meant http://api_session?</status>
+</test>
+<doc>Suite para testar cadastro de usuário
+comand line de execução: robot -d ./Results .Testeapi_testing_usuarios.robot</doc>
+<status status="FAIL" starttime="20230208 13:38:03.160" endtime="20230208 13:38:03.471"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="APITest2">APITest2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
